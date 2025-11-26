@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Afrah Mohammed | Portfolio </title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+    <a href="#" class="logo">Afrah<span>Portfolio</span></a>
+    <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#github">Code</a> <a href="#contact">Contact</a>
+        <span id="userChip" class="user-chip" aria-live="polite"></span>
+        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </nav>
+</header>
+<section class="banner">
+    <p id="greetingText" class="fade-in">Hi there! </p>
+    <button id="changeName" class="btn small" type="button">Change name</button>
+</section>
 
+<section id="about" class="container section">
+    <h2>About Me</h2>
+    <p>
+        I'm <strong>Afrah Mohammed</strong>, a Computer Science student who enjoys building useful, simple web experiences.
+        In this version of my portfolio, I added dynamic content, API integration, advanced validation, and better state management.
+    </p>
+</section>
+
+<section id="projects" class="container section">
+    <h2>Projects</h2>
+    <div class="controls">
+        <div class="filters">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="Web">Web</button>
+            <button class="chip" data-filter="Data">Data</button>
+            <button class="chip" data-filter="Presentation">Presentation</button>
+        </div>
+        <div class="search-sort">
+            <input id="searchInput" type="search" placeholder="Search projects…" aria-label="Search projects">
+            <select id="sortSelect" aria-label="Sort projects">
+                <option value="date-desc">Sort: Newest</option>
+                <option value="date-asc">Sort: Oldest</option>
+                <option value="title-asc">Sort: Title A–Z</option>
+                <option value="title-desc">Sort: Title Z–A</option>
+            </select>
+        </div>
+    </div>
+    <div id="projectsList" class="grid projects-grid"></div>
+    <noscript>
+        <div class="grid projects-grid">
+            <article class="project-card">
+                <img src="club.png" alt="CLUBZONE Platform" loading="lazy">
+                <div class="project-body">
+                    <h3>CLUBZONE Platform</h3>
+                    <div class="project-meta">Web • 2025-01-10</div>
+                    <p>A web platform to manage and join student clubs.</p>
+                </div>
+            </article>
+        </div>
+    </noscript>
+    <p id="emptyState" class="muted hidden">No projects found. Try a different search or filter.</p>
+</section>
+
+<section id="github" class="container section">
+    <h2>My Latest Code (GitHub API)</h2>
+    <div id="githubRepos" class="grid projects-grid">
+    </div>
+    <div id="githubSpinner" class="spinner-container">
+        <span class="spinner"></span> Loading repositories...
+    </div>
+    <p id="githubError" class="error hidden" style="text-align: center;">❌ Could not load GitHub repositories. Check your network or the GitHub username.</p>
+</section>
+
+<section id="contact" class="container section">
+    <h2>Contact Me</h2>
+    <form id="contactForm" novalidate>
+        <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required>
+            <span class="field-error" data-for="name"></span>
+        </label>
+        <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+            <span class="field-error" data-for="email"></span>
+        </label>
+        <label>
+            Message (Min. 10 characters)
+            <textarea name="message" rows="5" placeholder="Write your message…" required minlength="10"></textarea>
+            <span class="field-error" data-for="message"></span>
+        </label>
+        <button type="submit" class="btn">Send</button>
+        <p id="formStatus" class="status" aria-live="polite"></p>
+    </form>
+</section>
+
+<div id="nameGate" class="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="gate-card">
+        <h3 id="gateTitle">Welcome! 👋</h3>
+        <p class="muted">What’s your name?</p>
+        <form id="nameGateForm">
+            <input id="nameInput" type="text" placeholder="Enter your name" autocomplete="name" required>
+            <button type="submit" class="btn">OK</button>
+        </form>
+    </div>
+</div>
+
+<button id="backToTop" title="Go to top" aria-label="Back to top">⬆️</button>
+<script src="script.js"></script>
+</body>
+</html>
