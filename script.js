@@ -134,7 +134,7 @@ async function loadGitHubRepos() {
 }
 
 // 
-if (GITHUB_USERNAME !== 'your-github-username') {
+if (GITHUB_USERNAME !== 'Afrah-F') {
     loadGitHubRepos();
 } else {
     if (githubListEl) githubListEl.innerHTML = '<p class="muted" style="text-align: center; width: 100%;">Please set your GitHub username in js/script.js to load repositories.</p>';
