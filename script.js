@@ -144,7 +144,7 @@ async function loadGitHubRepos() {
           <div class="project-meta">
             ${repo.language || 'N/A'} • Updated: ${new Date(repo.updated_at).toLocaleDateString()}
           </div>
-          <p>${repo.description || 'No description provided.'}</p>
+          <p>${repo.description || 'Assignment "SWE363".'}</p>
           <a href="${repo.html_url}" target="_blank" class="btn small" style="margin-top: 10px;">
             View Repo
           </a>
@@ -175,7 +175,7 @@ const projects = [
     date: '2025-01-10',
     img: 'club.png',
     summary: 'A web platform to manage and join student clubs.',
-    details: 'Built as part of SWE206. I focused on UI design and improving UX flows.'
+    details: 'Built a project of SWE206.'
   },
   {
     title: 'Online Gaming Data Analysis',
