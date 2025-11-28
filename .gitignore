@@ -1,0 +1,26 @@
+# .gitignore for Assignment 3 Portfolio Project
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node modules (if ever used)
+node_modules/
+
+# Ignore temporary files
+*.log
+*.tmp
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore macOS files
+._*
+
+# Ignore build or cache folders (just in case)
+dist/
+build/
+
+# Ignore Python cache (if used by tools)
+__pycache__/
+
