@@ -20,12 +20,7 @@ It builds on Assignments 1 and 2 and includes several new advanced features such
 
 ---
 
-## 🚀 Live Demo  
-You can view the final deployed website here:
 
-👉 **https://afrah-f.github.io/assignment3/**
-
----
 
 ## 🗂 Folder Structure
 
@@ -124,7 +119,7 @@ Full details are in `docs/ai-usage-report.md`.
 ---
 
 ## 💬 Contact
-If you’d like to connect or view my work, feel free to explore my portfolio:
+If you’d like to connect or view my work, feel free to explore my Github:
 
-👉 **https://afrah-f.github.io/assignment3/**
+👉 **https://github.com/Afrah-F**
 
