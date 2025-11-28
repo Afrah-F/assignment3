@@ -83,7 +83,7 @@ const githubSpinnerEl = document.getElementById('githubSpinner');
 
 // 
 const GITHUB_USERNAME = 'Afrah-F';
-const REPOS_URL = `https://api.github.com/users/Afrah-F/repos?sort=updated&per_page=4`;
+const REPOS_URL = `https://api.github.com/users/Afrah-F/repos?sort=updated&per_page=3`;
 
 async function loadGitHubRepos() {
     if (!githubListEl || !githubSpinnerEl || !githubErrorEl) return;
