@@ -38,6 +38,7 @@ assignment3/
 │   ├── ai-usage-report.md
 │   └── technical-documentation.md
 └── README.md
+-├── .gitignore
 ```
 
 ---
