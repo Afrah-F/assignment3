@@ -173,7 +173,7 @@ const projects = [
     title: 'CLUBZONE Platform',
     category: 'Web',
     date: '2025-01-10',
-    img: 'club.png',
+    img: 'assets/images/club.png',
     summary: 'A web platform to manage and join student clubs.',
     details: 'Built a project of SWE206.'
   },
@@ -181,7 +181,7 @@ const projects = [
     title: 'Online Gaming Data Analysis',
     category: 'Data',
     date: '2024-04-01',
-    img: 'online.png',
+    img: 'assets/images/online.png',
     summary: 'Collected and analyzed player data with visual insights.',
     details: 'Part of COE292. I practiced data handling, visualization, and teamwork.'
   },
@@ -189,7 +189,7 @@ const projects = [
     title: 'Saudi Electricity Investment Presentation',
     category: 'Presentation',
     date: '2024-05-16',
-    img: 'elec.png',
+    img: 'assets/images/elec.png',
     summary: 'English 102 presentation on investment benefits.',
     details: 'Improved my research, academic writing, and presentation skills.'
   }
